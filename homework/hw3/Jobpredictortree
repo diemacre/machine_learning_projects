@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="JobCategory <= 3.5\ngini = 0.767\nsamples = 5000\nvalue = [986, 1344, 1200, 223, 1247]\nclass = Discover", fillcolor="#7be53907"] ;
+1 [label="JobCategory <= 2.5\ngini = 0.766\nsamples = 2730\nvalue = [558, 725, 685, 110, 652]\nclass = Discover", fillcolor="#7be53905"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="JobCategory <= 1.5\ngini = 0.764\nsamples = 1350\nvalue = [274, 355, 334, 48, 339]\nclass = Discover", fillcolor="#7be53904"] ;
+1 -> 2 ;
+3 [label="JobCategory <= 0.5\ngini = 0.763\nsamples = 664\nvalue = [132, 175, 170, 23, 164]\nclass = Discover", fillcolor="#7be53903"] ;
+2 -> 3 ;
+4 [label="gini = 0.761\nsamples = 212\nvalue = [41, 60, 52, 7, 52]\nclass = Discover", fillcolor="#7be5390d"] ;
+3 -> 4 ;
+5 [label="gini = 0.764\nsamples = 452\nvalue = [91, 115, 118, 16, 112]\nclass = MasterCard", fillcolor="#39e5c502"] ;
+3 -> 5 ;
+6 [label="gini = 0.765\nsamples = 686\nvalue = [142, 180, 164, 25, 175]\nclass = Discover", fillcolor="#7be53902"] ;
+2 -> 6 ;
+7 [label="gini = 0.768\nsamples = 1380\nvalue = [284, 370, 351, 62, 313]\nclass = Discover", fillcolor="#7be53905"] ;
+1 -> 7 ;
+8 [label="JobCategory <= 5.5\ngini = 0.767\nsamples = 2270\nvalue = [428, 619, 515, 113, 595]\nclass = Discover", fillcolor="#7be53904"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="JobCategory <= 4.5\ngini = 0.767\nsamples = 2255\nvalue = [427, 613, 510, 112, 593]\nclass = Discover", fillcolor="#7be53903"] ;
+8 -> 9 ;
+10 [label="gini = 0.767\nsamples = 1635\nvalue = [298, 444, 371, 84, 438]\nclass = Discover", fillcolor="#7be53901"] ;
+9 -> 10 ;
+11 [label="gini = 0.768\nsamples = 620\nvalue = [129, 169, 139, 28, 155]\nclass = Discover", fillcolor="#7be53908"] ;
+9 -> 11 ;
+12 [label="gini = 0.702\nsamples = 15\nvalue = [1, 6, 5, 1, 2]\nclass = Discover", fillcolor="#7be5391a"] ;
+8 -> 12 ;
+}

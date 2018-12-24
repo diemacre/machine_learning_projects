@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="CarOwnership <= 1.5\ngini = 0.767\nsamples = 5000\nvalue = [986, 1344, 1200, 223, 1247]\nclass = Discover", fillcolor="#7be53907"] ;
+1 [label="CarOwnership <= 0.5\ngini = 0.769\nsamples = 1296\nvalue = [252, 295, 310, 70, 369]\nclass = Visa", fillcolor="#e539c00f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.769\nsamples = 497\nvalue = [119, 120, 114, 21, 123]\nclass = Visa", fillcolor="#e539c002"] ;
+1 -> 2 ;
+3 [label="gini = 0.766\nsamples = 799\nvalue = [133, 175, 196, 49, 246]\nclass = Visa", fillcolor="#e539c015"] ;
+1 -> 3 ;
+4 [label="gini = 0.765\nsamples = 3704\nvalue = [734, 1049, 890, 153, 878]\nclass = Discover", fillcolor="#7be5390e"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
